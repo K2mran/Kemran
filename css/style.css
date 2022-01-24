@@ -1,0 +1,264 @@
+/* Normalize CSS */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html, body {    
+    font-family: 'Mulish', sans-serif;
+    font-size: 20px;
+    color: #696871;
+}
+
+:root {
+    --orange: #FF7143;
+    --darkblue: #5454D4;
+    --orangeactive: #f85722;
+    --darkblueactive:#3d3de2;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.row {
+    display: -webkit-box; /* Opera */
+    display: -ms-flexbox; /* Mozila Firefox */
+    display: flex; /* Chrome */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.button a {
+  background: var(--orange);
+  border-radius: 8px;
+  width: 210px;
+  height: 40px;
+  display: block;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2.1em;
+  color: #ffffff;
+  transition: background 0.4s ease-out;
+}
+.button a:hover{
+background: var(--orangeactive);
+}
+.button.dark_blue a{
+  background: var(--darkblue);
+}
+.button.dark_blue a:hover{
+  background: var(--darkblueactive);
+}
+h1, h2, h3 {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  line-height: 1em;
+  margin-bottom: 24px;
+  color: #19191B;
+}
+
+#header {
+  padding: 32px 0;
+  margin-bottom: 32px;
+}
+
+#header .row {
+  justify-content: space-between;
+}
+
+#header .logo {
+    width: calc(100% / 5 - 16px);
+}
+
+#header .logo a {
+    display: block;
+    background: url('../img/logo.svg') center center no-repeat;
+    width: 200px;
+    height: 40px;
+}
+
+#header .menu {
+  width: calc(100% / 4 - 16px);
+}
+
+#header .menu ul {
+    display: -webkit-box; /* Opera */
+    display: -ms-flexbox; /* Mozila Firefox */
+    display: flex; /* Chrome */
+    justify-content: space-between;
+}
+
+#header .menu ul a {    
+    display: block;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 2.7em;
+    color: #696871;
+}
+#parallax .row{
+  justify-content: space-between;
+}
+#parallax .hero_text {
+  width: 500px;
+}
+
+#parallax .hero_text p {
+  margin-bottom: 24px;
+}
+#parallax .hero_3D{
+  position: relative;
+  width: 600px;
+}
+#parallax .img{
+  position: absolute;
+ 
+}
+#parallax .hero_3D .stand{
+  background: url('../img/stand.png')center center no-repeat;
+  width: 554px;
+  height: 350px;
+  top: 50px;
+  left: 0;
+ 
+}
+#parallax .hero_3D .pose{
+  background: url('../img/pose.png')center center no-repeat;
+  width: 580px;
+  height: 644px;
+  top: -30px;
+  left: 0;
+}
+#parallax .hero_3D .bubble{
+  background: url('../img/bubble.png')center center no-repeat;
+  width: 230px;
+  height: 153px;
+  bottom: 0;
+  right: 0;
+ 
+
+}
+
+/* var(--orange) */
+/* var(--darkblue) */
